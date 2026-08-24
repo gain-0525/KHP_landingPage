@@ -98,3 +98,51 @@ table {
 .btn--outline:hover{ background:rgba(255,255,255,.10); transform:translateY(-1px); }
 .btn__arw{ font-size:1.05em; line-height:1; transition:transform .2s var(--ease); }
 .btn:hover .btn__arw{ transform:translateX(3px); }
+.sec {
+  padding: 104px 0;
+}
+
+.sec--mist {
+  background: var(--mist);
+}
+
+.sec--tight {
+  padding: 80px 0;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--blue);
+  text-transform: uppercase;
+}
+
+.h2 {
+  font-size: clamp(28px, 4.2vw, 42px);
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: -.035em;
+}
+
+.h3 {
+  font-size: clamp(21px, 2.4vw, 26px);
+  font-weight: 800;
+  letter-spacing: -.035em;
+  line-height: 1.36;
+}
+
+.lead {
+  margin-top: 18px;
+  font-size: clamp(16px, 1.6vw, 18px);
+  color: var(--ink-2);
+  line-height: 1.72;
+  font-weight: 500;
+}
+
+.sec__head {
+  max-width: 760px;
+  margin-bottom: 52px;
+}
