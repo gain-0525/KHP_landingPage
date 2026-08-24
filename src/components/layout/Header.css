@@ -1,0 +1,385 @@
+/* =========================
+   Header
+========================= */
+
+.hdr {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: var(--header-h);
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+}
+
+.hdr__in {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* =========================
+   Logo
+========================= */
+
+.lockup {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.lockup__mark {
+  width: 34px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lockup__mark svg {
+  width: 100%;
+  height: 100%;
+}
+
+.lockup__khp {
+  margin-left: 8px;
+  font-size: 15px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
+.lockup__bar {
+  width: 1px;
+  height: 22px;
+  margin: 0 12px;
+  background: var(--line);
+}
+
+.wordmark {
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.wordmark i {
+  font-style: normal;
+  font-weight: 400;
+}
+
+.gnb__link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.gnb__arrow {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+
+  transition: transform 0.2s var(--ease);
+}
+
+/* 해당 메뉴가 열려 있을 때 화살표 위로 */
+.gnb__it:hover .gnb__arrow {
+  transform: rotate(180deg);
+}
+
+/* =========================
+   Desktop Navigation
+========================= */
+
+.gnb {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 6px;
+}
+
+.gnb__it {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.gnb__it > a {
+  height: 100%;
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-2);
+
+  transition: color 0.18s var(--ease);
+}
+
+.gnb__it > a:hover,
+.gnb__it > a.active {
+  color: var(--blue);
+}
+
+/* Dropdown */
+
+.gnb__sub {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 50%;
+
+  min-width: 180px;
+  padding: 10px;
+
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+
+  box-shadow: 0 18px 40px -18px rgba(20, 22, 28, 0.25);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translate(-50%, 8px);
+
+  transition:
+    opacity 0.18s var(--ease),
+    transform 0.18s var(--ease),
+    visibility 0.18s;
+}
+
+.gnb__it:hover .gnb__sub,
+.gnb__it:focus-within .gnb__sub {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+
+.gnb__sub a {
+  display: block;
+
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-2);
+
+  white-space: nowrap;
+}
+
+.gnb__sub a:hover,
+.gnb__sub a.active {
+  color: var(--blue);
+  background: var(--mist);
+}
+
+/* =========================
+   Header right
+========================= */
+
+.hdr__side {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.themebtn {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  color: var(--ink-2);
+  box-shadow: inset 0 0 0 1px var(--line);
+
+  transition:
+    color 0.18s var(--ease),
+    background 0.18s var(--ease);
+}
+
+.themebtn:hover {
+  color: var(--ink);
+  background: var(--mist);
+}
+
+.hdr__login {
+  padding: 9px 15px;
+  border-radius: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* =========================
+   Burger
+========================= */
+
+.burger {
+  width: 40px;
+  height: 40px;
+
+  display: none;
+  place-items: center;
+
+  position: relative;
+}
+
+.burger span,
+.burger span::before,
+.burger span::after {
+  display: block;
+
+  width: 20px;
+  height: 2px;
+
+  background: var(--ink);
+
+  transition: transform 0.2s var(--ease);
+}
+
+.burger span {
+  position: relative;
+}
+
+.burger span::before,
+.burger span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.burger span::before {
+  top: -6px;
+}
+
+.burger span::after {
+  top: 6px;
+}
+
+/* =========================
+   Mobile navigation
+========================= */
+
+.mnav {
+  display: none;
+
+  position: fixed;
+  top: var(--header-h);
+  left: 0;
+  right: 0;
+
+  max-height: calc(100vh - var(--header-h));
+  overflow-y: auto;
+
+  background: var(--paper);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+
+  padding: 12px 0 30px;
+}
+
+.mnav.is-open {
+  display: block;
+}
+
+.mnav__g {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line-2);
+}
+
+.mnav__g > a {
+  display: block;
+
+  font-size: 17px;
+  font-weight: 800;
+
+  color: var(--ink);
+}
+
+.mnav__g ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  margin-top: 10px;
+}
+
+.mnav__g li a {
+  display: block;
+
+  padding: 7px 0;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: var(--ink-2);
+}
+
+.mnav__g li a:hover {
+  color: var(--blue);
+}
+
+/* =========================
+   Dark Mode
+========================= */
+
+html[data-theme="dark"] .hdr {
+  background: rgba(11, 13, 20, 0.86);
+}
+
+html[data-theme="dark"] .gnb__sub {
+  background: var(--surface);
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.8);
+}
+
+html[data-theme="dark"] .mnav {
+  background: var(--paper);
+}
+
+html[data-theme="dark"] .hdr__login {
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: inset 0 0 0 1px var(--line);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1024px) {
+  .gnb {
+    display: none;
+  }
+
+  .burger {
+    display: grid;
+  }
+}
+
+@media (max-width: 640px) {
+  .lockup__khp,
+  .lockup__bar {
+    display: none;
+  }
+
+  .hdr__login {
+    display: none;
+  }
+
+  .wordmark {
+    font-size: 17px;
+  }
+}
