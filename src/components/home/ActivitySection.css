@@ -1,0 +1,35 @@
+.acts{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+.act{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); overflow:hidden;
+  display:flex; flex-direction:column;
+  transition:transform .26s var(--ease), box-shadow .26s var(--ease), border-color .26s var(--ease);
+}
+.act:hover{ transform:translateY(-5px); border-color:var(--line-4); box-shadow:0 24px 54px -30px rgba(24,28,70,.42); }
+.act__ph{
+  position:relative; aspect-ratio:16/9; padding:26px; overflow:hidden;
+  display:flex; flex-direction:column; justify-content:space-between; color:#fff;
+  background:linear-gradient(142deg,#1B1B63 0%,#3D3BD6 52%,#7C79F2 100%);
+}
+.act--jeju .act__ph{ background:linear-gradient(142deg,#0B3F4E 0%,#1E7F8C 48%,#57C2B4 100%); }
+.act__ph::after{
+  content:""; position:absolute; inset:0;
+  background:radial-gradient(120% 90% at 88% 6%,rgba(255,255,255,.24),transparent 56%);
+}
+.act__loc{
+  position:relative; z-index:1; align-self:flex-start;
+  padding:5px 13px; border-radius:999px; font-size:12.5px; font-weight:700; letter-spacing:.02em;
+  background:rgba(255,255,255,.18); border:1px solid rgba(255,255,255,.30); backdrop-filter:blur(6px);
+}
+.act__nm{
+  position:relative; z-index:1;
+  font-size:clamp(26px,3.4vw,38px); font-weight:800; letter-spacing:-.05em; line-height:1.1;
+}
+.act__b{ padding:30px 30px 32px; display:flex; flex-direction:column; flex:1 1 auto; }
+.act__t{ font-size:22px; font-weight:800; letter-spacing:-.04em; }
+.act__q{ margin-top:12px; font-size:16px; font-weight:700; color:var(--blue); letter-spacing:-.03em; line-height:1.5; }
+.act--jeju .act__q{ color:#128678; }
+.act__d{ margin-top:14px; font-size:15.5px; color:var(--ink-2); line-height:1.76; flex:1 1 auto; }
+.act__go{ display:flex; flex-wrap:wrap; gap:10px 20px; margin-top:26px; padding-top:22px; border-top:1px solid var(--line-2); }
+.act__go a{ font-size:14.5px; font-weight:700; color:var(--ink); display:inline-flex; align-items:center; gap:6px; }
+.act__go a:hover{ color:var(--blue); }
+.act__go a:hover .btn__arw{ transform:translateX(3px); }
