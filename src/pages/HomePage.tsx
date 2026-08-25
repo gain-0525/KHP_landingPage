@@ -3,7 +3,8 @@ import IntroSection from '../components/home/IntroSection';
 import ActivitySection from '../components/home/ActivitySection';
 import RoadmapSection from '../components/home/RoadmapSection';
 import ResultsSection from '../components/home/ResultSection';
-
+import EcosystemSection from '../components/home/EcoSystemSection';
+import CtaSection from '../components/home/CtaSection';
 const HomePage = () => {
     return (
         <>
@@ -12,6 +13,8 @@ const HomePage = () => {
             <ActivitySection />
             <RoadmapSection />
             <ResultsSection />
+            <EcosystemSection />
+            <CtaSection />
         </>
     )
 }

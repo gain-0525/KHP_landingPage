@@ -1,0 +1,70 @@
+.eco {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.eco__it {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  padding: 28px 26px 24px;
+  min-height: 210px;
+
+  transition:
+    transform .24s var(--ease),
+    border-color .24s var(--ease),
+    box-shadow .24s var(--ease);
+}
+
+.eco__it:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-4);
+  box-shadow: 0 16px 38px -22px rgba(10, 12, 16, .34);
+}
+
+.eco__tag {
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: var(--ink-3);
+}
+
+.eco__t {
+  margin-top: 14px;
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.eco__d {
+  margin-top: 9px;
+  font-size: 14.5px;
+  color: var(--ink-2);
+  line-height: 1.66;
+}
+
+.eco__go {
+  margin-top: auto;
+  padding-top: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--blue);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.eco__it:hover .btn__arw {
+  transform: translateX(3px);
+}
+
+.eco__it--soon {
+  background: var(--mist);
+}
+
+.eco__it--soon .eco__go {
+  color: var(--ink-3);
+}
