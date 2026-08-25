@@ -1,0 +1,167 @@
+.road__track {
+  position: relative;
+}
+
+.road__track::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 23px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--blue) 0%,
+    var(--blue) 66%,
+    var(--line) 66%
+  );
+}
+
+.road__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+.step {
+  display: block;
+  padding-top: 60px;
+  position: relative;
+  transition: transform .28s var(--ease);
+}
+
+.step::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 17px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 0 5px var(--paper);
+  transition: transform .28s var(--ease);
+}
+
+.sec--mist .step::before {
+  box-shadow: 0 0 0 5px var(--mist);
+}
+
+.step:hover {
+  transform: translateY(-6px);
+}
+
+.step:hover::before {
+  transform: scale(1.22);
+}
+
+.step__no {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  color: var(--blue);
+  margin-bottom: 12px;
+}
+
+.step__body {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  padding: 32px 30px 28px;
+  height: 100%;
+  transition:
+    border-color .28s var(--ease),
+    box-shadow .28s var(--ease);
+}
+
+.step:hover .step__body {
+  border-color: var(--line-4);
+  box-shadow: 0 18px 46px -22px rgba(68, 68, 226, .40);
+}
+
+.step__title {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -.035em;
+  line-height: 1.34;
+}
+
+.step__desc {
+  margin-top: 10px;
+  font-size: 15.5px;
+  color: var(--ink-2);
+  line-height: 1.68;
+}
+
+.step__meta {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line-2);
+}
+
+.step__row + .step__row {
+  margin-top: 14px;
+}
+
+.step__k {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+
+.step__v {
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.step__v b {
+  font-weight: 800;
+}
+
+.step__hours {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 5px;
+  background: var(--sky);
+  color: var(--blue-deep);
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.step__go {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 24px;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.step:hover .step__go .btn__arw {
+  transform: translateX(3px);
+}
+
+/* Roadmap 하단 문의 영역 */
+.visit__foot {
+  text-align: center;
+  margin-top: 64px;
+}
+
+.visit__copy {
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 700;
+  letter-spacing: -.035em;
+  line-height: 1.5;
+}
+
+.visit__foot .btn {
+  margin-top: 26px;
+}
+
+.step__stage{ font-size:14px; font-weight:700; color:var(--ink-3); margin-bottom:8px; letter-spacing:-.02em; }
