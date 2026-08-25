@@ -14,9 +14,9 @@ export const navigation: NavigationItem[] = [
     label: "교육훈련",
     path: "/programs",
     children: [
-      { label: "2026 강좌", path: "/programs/courses" },
-      { label: "지난 강좌", path: "/programs/past" },
-      { label: "AI 세미나", path: "/programs/commit" },
+      { label: "2026 강좌", path: "/programs#courses" },
+      { label: "지난 강좌", path: "/programs#past" },
+      { label: "AI 세미나", path: "/programs#commit" },
     ],
   },
   {
