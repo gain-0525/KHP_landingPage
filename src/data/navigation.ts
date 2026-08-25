@@ -5,9 +5,9 @@ export const navigation: NavigationItem[] = [
     label: "사업소개",
     path: "/about",
     children: [
-      { label: "K-하이테크 플랫폼", path: "/about/khp" },
-      { label: "구름 소개", path: "/about/goorm" },
-      { label: "오시는 길", path: "/about/location" },
+      { label: "K-하이테크 플랫폼", path: "/about#khp" },
+      { label: "구름 소개", path: "/about#goorm" },
+      { label: "오시는 길", path: "/about#location" },
     ],
   },
   {

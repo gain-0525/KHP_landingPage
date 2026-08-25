@@ -173,12 +173,10 @@
   white-space: nowrap;
 }
 
-.gnb__sub a:hover,
-.gnb__sub a.active {
+.gnb__sub a:hover {
   color: var(--blue);
   background: var(--mist);
 }
-
 /* =========================
    Header right
 ========================= */
