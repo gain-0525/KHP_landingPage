@@ -2,6 +2,8 @@ import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
+import CtaSection from "./components/layout/CtaSection";
+
 import HomePage from "./pages/HomePage";
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
         </Routes>
       </main>
 
+      <CtaSection />
       <Footer />
     </>
   );
