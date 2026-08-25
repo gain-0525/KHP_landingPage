@@ -29,6 +29,10 @@
   margin-top: 42px;
 }
 
+.commit__tabs .tab[aria-selected="true"] {
+  background: var(--blue);
+  color: #fff;
+}
 
 /* Cards */
 
