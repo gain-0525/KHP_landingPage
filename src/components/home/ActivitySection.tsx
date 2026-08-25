@@ -98,12 +98,16 @@ const ActivitySection = () => {
                   </span>
                 </Link>
 
-                <Link to="/programs/courses">
-                  교육과정 보기
+                <a
+                  href="https://9oormthon.goorm.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  구름톤 in JEJU 자세히 보기
                   <span className="btn__arw" aria-hidden="true">
-                    →
+                    ↗
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
           </article>

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 import "./EcosystemSection.css";
 
 const EcosystemSection = () => {
@@ -83,21 +81,29 @@ const EcosystemSection = () => {
             </span>
           </a>
 
-          <Link className="eco__it" to="/space/space">
+          <a
+            className="eco__it"
+            href="https://9oormthon.goorm.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
             <span className="eco__tag">해커톤</span>
-            <h3 className="eco__t">구름톤 in JEJU</h3>
+
+            <h3 className="eco__t">
+                구름톤 in JEJU
+            </h3>
 
             <p className="eco__d">
-              제주에서 3박 4일간 진행되는 해커톤
+                제주에서 3박 4일간 진행되는 해커톤
             </p>
 
             <span className="eco__go">
-              자세히 보기
-              <span className="btn__arw" aria-hidden="true">
-                →
-              </span>
+                자세히 보기
+                <span className="btn__arw" aria-hidden="true">
+                ↗
+                </span>
             </span>
-          </Link>
+            </a>
         </div>
       </div>
     </section>
