@@ -146,3 +146,44 @@ table {
   max-width: 760px;
   margin-bottom: 52px;
 }
+
+.quote {
+  margin-top: 8px;
+  padding: 26px 30px;
+  border-radius: var(--r-md);
+  background: var(--sky);
+  color: var(--blue-deep);
+  font-size: clamp(17px, 2vw, 21px);
+  font-weight: 800;
+  letter-spacing: -.035em;
+  line-height: 1.5;
+}
+
+.prose {
+  font-size: 16.5px;
+  color: var(--ink-2);
+  line-height: 1.82;
+}
+
+.prose + .prose {
+  margin-top: 16px;
+}
+
+.prose b {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.deflist{ display:grid; gap:0; margin-top:38px; border-top:1px solid var(--line); }
+.deflist > div{ display:grid; grid-template-columns:230px minmax(0,1fr); gap:24px; padding:26px 4px; border-bottom:1px solid var(--line); }
+.deflist dt{ font-size:17px; font-weight:800; letter-spacing:-.035em; }
+.deflist dd{ font-size:15.5px; color:var(--ink-2); line-height:1.72; }
+
+.cards{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.cards--2{ grid-template-columns:repeat(2,1fr); }
+.cards--4{ grid-template-columns:repeat(4,1fr); }
+.card{ background:var(--surface); border:1px solid var(--line); border-radius:var(--r-lg); padding:30px 28px; transition:border-color .24s var(--ease), box-shadow .24s var(--ease), transform .24s var(--ease); }
+.card:hover{ border-color:var(--line-4); box-shadow:0 18px 40px -26px rgba(24,28,70,.34); }
+.card__t{ font-size:19px; font-weight:800; letter-spacing:-.035em; line-height:1.4; }
+.card__d{ margin-top:11px; font-size:15px; color:var(--ink-2); line-height:1.7; }
+.card__meta{ margin-top:20px; padding-top:18px; border-top:1px solid var(--line-2); display:flex; flex-wrap:wrap; gap:8px; }

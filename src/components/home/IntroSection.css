@@ -71,13 +71,3 @@
   color: var(--ink-2);
   line-height: 1.74;
 }
-
-.quote{
-  margin-top:8px; padding:26px 30px; border-radius:var(--r-md);
-  background:var(--sky); color:var(--blue-deep);
-  font-size:clamp(17px,2vw,21px); font-weight:800; letter-spacing:-.035em; line-height:1.5;
-}
-
-.prose{ font-size:16.5px; color:var(--ink-2); line-height:1.82; }
-.prose + .prose{ margin-top:16px; }
-.prose b{ color:var(--ink); font-weight:700; }
