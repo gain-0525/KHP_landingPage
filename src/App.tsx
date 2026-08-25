@@ -1,4 +1,8 @@
+import { Route, Routes } from "react-router-dom";
+
 import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
@@ -6,10 +10,12 @@ function App() {
       <Header />
 
       <main>
-        <div className="wrap">
-          <h1>K-하이테크 플랫폼</h1>
-        </div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
       </main>
+
+      <Footer />
     </>
   );
 }

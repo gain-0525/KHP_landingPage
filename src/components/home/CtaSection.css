@@ -1,0 +1,63 @@
+
+.cta {
+  background: #14161c;
+  color: #fff;
+  padding: 110px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    64% 120% at 78% 0%,
+    rgba(68, 68, 226, .48),
+    transparent 62%
+  );
+}
+
+.cta__in {
+  position: relative;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: clamp(28px, 4.2vw, 44px);
+  font-weight: 800;
+  line-height: 1.32;
+  letter-spacing: -.04em;
+}
+
+.cta p {
+  margin-top: 18px;
+  font-size: 17px;
+  color: rgba(255, 255, 255, .66);
+  line-height: 1.7;
+}
+
+.cta__btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 38px;
+}
+
+.cta .btn--light {
+  background: #ffffff;
+  color: #14161c;
+  border-color: #ffffff;
+}
+
+.cta .btn--light:hover {
+  background: #ffffff;
+  color: #14161c;
+  border-color: #ffffff;
+}
+
+/* 화살표도 글자색 그대로 */
+.cta .btn--light .btn__arw {
+  color: inherit;
+}
