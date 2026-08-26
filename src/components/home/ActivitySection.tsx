@@ -55,7 +55,7 @@ const ActivitySection = () => {
                   </span>
                 </Link>
 
-                <Link to="/programs/commit">
+                <Link to="/programs#commit">
                   워크숍 소개
                   <span className="btn__arw" aria-hidden="true">
                     ↗

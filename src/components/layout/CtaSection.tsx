@@ -20,7 +20,7 @@ const CtaSection = () => {
         <div className="cta__btns">
           <Link
             className="btn btn--lg btn--light"
-            to="/contact/inquiry"
+            to="/contact"
           >
             교육 및 제휴 문의하기
             <span className="btn__arw" aria-hidden="true">
@@ -30,7 +30,7 @@ const CtaSection = () => {
 
           <Link
             className="btn btn--lg btn--outline"
-            to="/space/guide"
+            to="/space"
           >
             공간 대관 알아보기
           </Link>
