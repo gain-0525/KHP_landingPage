@@ -42,7 +42,7 @@ const IntroSection = () => {
             <p style={{ marginTop: "26px" }}>
               <Link
                 className="btn btn--sm btn--ghost"
-                to="/about/khp"
+                to="/about#khp"
               >
                 사업 자세히 보기
                 <span className="btn__arw" aria-hidden="true">

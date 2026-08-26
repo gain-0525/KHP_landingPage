@@ -48,7 +48,7 @@ const ActivitySection = () => {
               </p>
 
               <div className="act__go">
-                <Link to="/space/space">
+                <Link to="/space">
                   성남 공간 둘러보기
                   <span className="btn__arw" aria-hidden="true">
                     →
@@ -58,7 +58,7 @@ const ActivitySection = () => {
                 <Link to="/programs/commit">
                   워크숍 소개
                   <span className="btn__arw" aria-hidden="true">
-                    →
+                    ↗
                   </span>
                 </Link>
               </div>
@@ -91,7 +91,7 @@ const ActivitySection = () => {
               </p>
 
               <div className="act__go">
-                <Link to="/space/space">
+                <Link to="/space">
                   제주 공간 둘러보기
                   <span className="btn__arw" aria-hidden="true">
                     →
