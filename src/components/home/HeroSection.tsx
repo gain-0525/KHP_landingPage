@@ -163,7 +163,7 @@ const HeroSection = () => {
                 </svg>
               </span>
 
-              <span className="fc card span">
+              <span>
                 <b>기업 맞춤 교육</b>
                 <span>AX 컨설팅 &amp; 프로젝트</span>
               </span>
