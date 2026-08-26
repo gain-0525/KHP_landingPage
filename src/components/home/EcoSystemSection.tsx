@@ -1,4 +1,4 @@
-import "./EcosystemSection.css";
+import "./EcoSystemSection.css";
 
 const EcosystemSection = () => {
   return (
