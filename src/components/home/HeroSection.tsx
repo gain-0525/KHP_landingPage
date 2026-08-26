@@ -36,7 +36,7 @@ const HeroSection = () => {
             <div className="hero__cta">
               <Link
                 className="btn btn--md btn--fill btn--sq"
-                to="/programs/courses"
+                to="/programs"
               >
                 <svg className="ic" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M3 8l9-4 9 4-9 4-9-4z" />
@@ -51,7 +51,7 @@ const HeroSection = () => {
 
               <Link
                 className="btn btn--md btn--ghost btn--sq"
-                to="/space/space"
+                to="/space"
               >
                 <svg className="ic" viewBox="0 0 24 24" aria-hidden="true">
                   <rect x="4" y="4" width="9.5" height="16" rx="1.4" />
