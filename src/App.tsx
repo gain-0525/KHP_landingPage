@@ -8,10 +8,14 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProgramsPage from "./pages/ProgramsPage";
 import SpacePage from "./pages/SpacePage";
+import ContactPage from "./pages/ContactPage";
+import "./components/common/ScrollToTop";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
 
       <main>
@@ -20,6 +24,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/programs" element={<ProgramsPage />} />
           <Route path="/space" element={<SpacePage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </main>
 
