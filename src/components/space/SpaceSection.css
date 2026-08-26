@@ -1,0 +1,377 @@
+/* =========================
+   SPACE SECTION
+========================= */
+
+/* 제목 + 판교/제주 탭 */
+.place__top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 38px;
+}
+
+.place__top .sec__head {
+  flex: 1;
+}
+
+
+/* =========================
+   LOCATION TABS
+========================= */
+
+.tabs {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 4px;
+
+  border-radius: 10px;
+  background: var(--mist);
+
+  flex: 0 0 auto;
+}
+
+.tab {
+  height: 40px;
+  padding: 0 18px;
+
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-3);
+
+  cursor: pointer;
+
+  transition:
+    background .18s var(--ease),
+    color .18s var(--ease),
+    box-shadow .18s var(--ease);
+}
+
+.tab:hover {
+  color: var(--ink);
+}
+
+.tab[aria-selected="true"] {
+  background: var(--surface);
+  color: var(--blue);
+  box-shadow: 0 2px 8px rgba(24, 28, 70, .08);
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gal {
+  margin-bottom: 36px;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider__view {
+  overflow: hidden;
+  border-radius: var(--r-lg);
+}
+
+.slider__track {
+  display: flex;
+  transition: transform .4s var(--ease);
+}
+
+.slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.slide__ph {
+  position: relative;
+
+  min-height: 430px;
+
+  display: flex;
+  align-items: flex-end;
+
+  overflow: hidden;
+
+  border-radius: var(--r-lg);
+
+  background:
+    radial-gradient(
+      60% 90% at 80% 10%,
+      var(--hero-a),
+      transparent 65%
+    ),
+    linear-gradient(
+      135deg,
+      var(--hero-c),
+      var(--hero-d)
+    );
+}
+
+/* 실제 이미지 사용할 경우 */
+.slide__ph img {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* 판교/제주 표시 */
+.slide__tag {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+
+  z-index: 2;
+
+  display: inline-flex;
+  align-items: center;
+
+  height: 30px;
+  padding: 0 12px;
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, .9);
+  color: var(--blue-deep);
+
+  font-size: 12.5px;
+  font-weight: 800;
+}
+
+
+/* 이미지 하단 설명 */
+.slide__cap {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  padding: 80px 30px 28px;
+
+  color: #fff;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(15, 17, 35, .72),
+      transparent
+    );
+}
+
+.slide__cap strong {
+  display: block;
+
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.slide__cap span {
+  display: block;
+
+  margin-top: 7px;
+
+  font-size: 14.5px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, .8);
+}
+
+
+/* =========================
+   GALLERY NAVIGATION
+========================= */
+
+.slider__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 16px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dots button {
+  width: 7px;
+  height: 7px;
+
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+
+  background: var(--line-4);
+
+  cursor: pointer;
+}
+
+.dots button[aria-current="true"] {
+  width: 20px;
+  border-radius: 999px;
+  background: var(--blue);
+}
+
+.arrows {
+  display: flex;
+  gap: 7px;
+}
+
+.arrow {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--line);
+  border-radius: 50%;
+
+  background: var(--surface);
+  color: var(--ink);
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition:
+    background .18s var(--ease),
+    border-color .18s var(--ease);
+}
+
+.arrow:hover {
+  background: var(--mist);
+  border-color: var(--line-4);
+}
+
+
+/* =========================
+   ROOM CARDS
+========================= */
+
+.room {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
+
+.room__ph {
+  aspect-ratio: 16 / 10;
+}
+
+.room__ph img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.room__b {
+  padding: 26px 26px 28px;
+}
+
+.room__t {
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.room__dl {
+  margin-top: 18px;
+}
+
+.room__dl > div {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+
+  gap: 12px;
+  padding: 9px 0;
+
+  border-top: 1px solid var(--line-2);
+}
+
+.room__dl dt {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+
+.room__dl dd {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--ink-2);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .place__top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .slide__ph {
+    min-height: 300px;
+  }
+
+  .slide__cap {
+    padding: 60px 22px 22px;
+  }
+
+  .slide__cap strong {
+    font-size: 21px;
+  }
+
+  .room__dl > div {
+    grid-template-columns: 80px minmax(0, 1fr);
+  }
+}
+
+.room__ph {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--mist);
+}
+
+.room__ph img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.space__hero {
+  margin-bottom: 50px;
+  width: 1130px;
+}
+
+.space__hero img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

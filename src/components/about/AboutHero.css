@@ -93,3 +93,32 @@
   color: var(--blue);
   border-bottom-color: var(--blue);
 }
+
+.subnav button {
+  display: block;
+  padding: 17px 16px;
+
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-3);
+  white-space: nowrap;
+  cursor: pointer;
+
+  transition:
+    color .18s var(--ease),
+    border-color .18s var(--ease);
+}
+
+.subnav button:hover {
+  color: var(--ink);
+}
+
+.subnav button.is-on {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+}

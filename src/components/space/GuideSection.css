@@ -1,0 +1,51 @@
+.reservation-notice {
+  margin-top: 24px;
+  padding: 24px 28px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--mist);
+}
+
+.reservation-notice__title {
+  margin: 0 0 16px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.reservation-contact {
+  margin-top: 40px;
+  padding: 24px 28px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--mist);
+}
+
+.reservation-contact h4 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.reservation-contact p {
+  margin: 0;
+}
+
+.reservation-contact a {
+  color: var(--blue);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.reservation-contact__divider {
+  margin: 0 12px;
+  color: var(--line);
+}
+
+
+@media (max-width: 768px) {
+  .reservation-contact__divider {
+    display: block;
+    height: 8px;
+    font-size: 0;
+  }
+}

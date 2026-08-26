@@ -7,6 +7,7 @@ import CtaSection from "./components/layout/CtaSection";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ProgramsPage from "./pages/ProgramsPage";
+import SpacePage from "./pages/SpacePage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/programs" element={<ProgramsPage />} />
+          <Route path="/space" element={<SpacePage />} />
         </Routes>
       </main>
 

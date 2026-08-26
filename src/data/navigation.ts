@@ -23,9 +23,9 @@ export const navigation: NavigationItem[] = [
     label: "장소대관",
     path: "/space",
     children: [
-      { label: "공간 소개", path: "/space/space" },
-      { label: "대관 안내", path: "/space/guide" },
-      { label: "대관 신청", path: "/space/booking" },
+      { label: "공간 소개", path: "/space#space" },
+      { label: "이용 안내", path: "/space#guide" },
+      { label: "예약", path: "/space#booking" },
     ],
   },
   {
