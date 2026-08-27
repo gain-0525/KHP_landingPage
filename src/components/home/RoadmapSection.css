@@ -9,12 +9,7 @@
   right: 0;
   top: 23px;
   height: 1px;
-  background: linear-gradient(
-    90deg,
-    var(--blue) 0%,
-    var(--blue) 66%,
-    var(--line) 66%
-  );
+  background-color: blue;
 }
 
 .road__grid {

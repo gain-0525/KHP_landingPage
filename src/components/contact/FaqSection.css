@@ -134,6 +134,69 @@
   background-color: #fff;
 }
 
+.faq__contact {
+  margin-top: 40px;
+  padding: 28px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  background: var(--mist);
+  border-radius: var(--r-lg);
+}
+
+.faq__contact-text strong {
+  display: block;
+  margin-bottom: 6px;
+
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--ink);
+}
+
+.faq__contact-text p {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-3);
+}
+
+.faq__contact-info {
+  flex-shrink: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.faq__contact-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-3);
+}
+
+.faq__contact-info a {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.faq__contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .faq__contact {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 24px;
+  }
+}
+
 /* 모바일 */
 @media (max-width: 768px) {
   .faq__tabs {

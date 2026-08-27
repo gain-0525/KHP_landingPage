@@ -13,26 +13,39 @@ const CtaSection = () => {
         </h2>
 
         <p>
-          인원과 일정, 다루고 싶은 주제를 남겨주시면 담당자가
-          커리큘럼을 제안 드립니다.
+          교육 및 제휴 관련 문의는 아래 연락처를 통해
+          담당자에게 문의해 주세요.
         </p>
 
-        <div className="cta__btns">
-          <Link
-            className="btn btn--lg btn--light"
-            to="/contact"
+        <div className="cta__contact">
+          <a
+            href="mailto:goormsquare@goorm.io"
+            className="cta__contact-item"
           >
-            교육 및 제휴 문의하기
-            <span className="btn__arw" aria-hidden="true">
-              →
-            </span>
-          </Link>
+            <span className="cta__contact-label">이메일 </span>
+            <strong>goormsquare@goorm.io</strong>
+          </a>
 
+          <span className="cta__contact-divider" />
+
+          <a
+            href="tel:0316008586"
+            className="cta__contact-item"
+          >
+            <span className="cta__contact-label">전화 </span>
+            <strong>031-600-8583</strong>
+          </a>
+        </div>
+
+        <div className="cta__btns">
           <Link
             className="btn btn--lg btn--outline"
             to="/space"
           >
             공간 대관 알아보기
+            <span className="btn__arw" aria-hidden="true">
+              →
+            </span>
           </Link>
         </div>
       </div>

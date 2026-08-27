@@ -128,7 +128,7 @@ table {
 }
 
 .h3 {
-  font-size: clamp(21px, 2.4vw, 26px);
+  font-size: clamp(21px, 2.4vw, 36px);
   font-weight: 800;
   letter-spacing: -.035em;
   line-height: 1.36;
