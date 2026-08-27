@@ -11,6 +11,7 @@ import SpacePage from "./pages/SpacePage";
 import ContactPage from "./pages/ContactPage";
 import "./components/common/ScrollToTop";
 import ScrollToTop from "./components/common/ScrollToTop";
+import CommunityPage from "./pages/CommunityPage";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/programs" element={<ProgramsPage />} />
           <Route path="/space" element={<SpacePage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/community" element={<CommunityPage />} />
         </Routes>
       </main>
 

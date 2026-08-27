@@ -2,15 +2,30 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "instant",
-    });
-  }, [pathname]);
+    if (hash) {
+      // #notice -> notice
+      const id = hash.replace("#", "");
+
+      // 페이지 렌더링 후 해당 섹션으로 이동
+      setTimeout(() => {
+        const element = document.getElementById(id);
+
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 0);
+
+      return;
+    }
+
+    window.scrollTo(0, 0);
+  }, [pathname, hash]);
 
   return null;
 };
