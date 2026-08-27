@@ -113,7 +113,7 @@ table {
 .eyebrow {
   display: inline-block;
   margin-bottom: 16px;
-  font-size: 13.5px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: .06em;
   color: var(--blue);
