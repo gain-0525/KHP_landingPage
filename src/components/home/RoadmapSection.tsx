@@ -147,9 +147,9 @@ const RoadmapSection = () => {
 
           <Link
             className="btn btn--lg btn--fill"
-            to="/contact/inquiry"
+            to="/programs"
           >
-            교육 신청 · 문의하기
+            교육훈련 자세히보기
             <span className="btn__arw" aria-hidden="true">
               →
             </span>

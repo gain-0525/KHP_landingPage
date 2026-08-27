@@ -235,6 +235,25 @@ const FaqSection = () => {
             );
           })}
         </div>
+
+        {/* 문의 안내 */}
+        <div className="faq__contact">
+          <div className="faq__contact-text">
+            <strong>원하는 답변을 찾지 못하셨나요?</strong>
+            <p>
+              교육 및 K-하이테크 플랫폼 이용에 관한 문의는
+              아래 연락처로 문의해 주세요.
+            </p>
+          </div>
+
+          <div className="faq__contact-info">
+            <span className="faq__contact-label">문의 전화</span>
+
+            <a href="tel:0316008586">
+              031-600-8583
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
