@@ -1,0 +1,48 @@
+.review__cards {
+  margin-top: 36px;
+}
+
+.rev {
+  padding: 28px;
+
+  border: 1px solid var(--line);
+  border-radius: 20px;
+
+  background: #fff;
+}
+
+.rev__stars {
+  margin-bottom: 18px;
+
+  color: #f0a32b;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.rev__q {
+  margin: 0;
+
+  color: var(--ink);
+  line-height: 1.8;
+}
+
+.rev__by {
+  margin: 24px 0 0;
+
+  color: var(--ink-3);
+  font-size: 14px;
+}
+
+.rev__by_part {
+  margin: 24px 0 0;
+
+  color: black;
+  font-size: 14px;
+}
+
+.review__note {
+  margin-top: 28px;
+
+  font-size: 14px;
+  color: var(--ink-3);
+}

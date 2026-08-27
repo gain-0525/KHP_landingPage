@@ -1,0 +1,27 @@
+.gallery__cards {
+  margin-top: 36px;
+}
+
+.gallery__card {
+  padding: 0;
+  overflow: hidden;
+}
+
+.gallery__body {
+  padding: 24px 24px 26px;
+}
+
+.gallery__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-top: 14px;
+}
+
+.gallery__note {
+  margin-top: 28px;
+
+  font-size: 14px;
+  color: var(--ink-3);
+}

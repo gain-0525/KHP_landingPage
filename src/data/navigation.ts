@@ -32,8 +32,9 @@ export const navigation: NavigationItem[] = [
     label: "커뮤니티",
     path: "/community",
     children: [
-      { label: "공지사항", path: "/community/notice" },
-      { label: "교육 후기", path: "/community/review" },
+      { label: "공지사항", path: "/community#notice" },
+      { label: "교육 갤러리", path: "/community#gallery" },
+      { label: "수강후기", path: "/community#reviews" },
     ],
   },
   {
