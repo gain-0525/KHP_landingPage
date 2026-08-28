@@ -1,0 +1,136 @@
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  #khp .quote {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  #khp .prose {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  #khp .deflist {
+    margin-top: 32px;
+  }
+
+  #khp .deflist > div {
+    padding: 22px 0;
+  }
+
+  #khp .deflist dt {
+    font-size: 16px;
+  }
+
+  #khp .deflist dd {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  #khp .quote {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  #khp .prose {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  #khp .deflist {
+    margin-top: 26px;
+  }
+
+  #khp .deflist > div {
+    padding: 18px 0;
+  }
+
+  #khp .deflist dt {
+    font-size: 15px;
+  }
+
+  #khp .deflist dd {
+    margin-top: 7px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  #khp .quote {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  #khp .prose {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  #khp .deflist {
+    margin-top: 32px;
+  }
+
+  #khp .deflist > div {
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 20px;
+    padding: 22px 4px;
+  }
+
+  #khp .deflist dt {
+    font-size: 16px;
+  }
+
+  #khp .deflist dd {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  #khp .quote {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  #khp .prose {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  #khp .deflist {
+    margin-top: 26px;
+  }
+
+  /* 제목 + 설명을 위아래로 */
+  #khp .deflist > div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 18px 2px;
+  }
+
+  #khp .deflist dt {
+    font-size: 15px;
+  }
+
+  #khp .deflist dd {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}

@@ -61,3 +61,123 @@
   font-size: 13px;
   color: var(--ink-4);
 }
+
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  .ftr {
+    padding: 52px 0 44px;
+  }
+
+  .ftr__top {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  /* 로고 */
+  .ftr .lockup {
+    align-self: flex-start;
+  }
+
+  .ftr .lockup__logo {
+    width: 140px;
+    height: auto;
+  }
+
+  /* 메뉴 */
+  .ftr__cols {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .ftr__ct {
+    font-size: 13px;
+  }
+
+  .ftr__cols a {
+    font-size: 14px;
+  }
+
+  /* 회사 정보 */
+  .ftr__bot {
+    margin-top: 40px;
+    padding-top: 24px;
+  }
+
+  .ftr__info {
+    font-size: 12.5px;
+  }
+
+  .ftr__cp {
+    font-size: 12px;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  .ftr {
+    padding: 40px 0 32px;
+  }
+
+  .ftr__top {
+    gap: 32px;
+  }
+
+  /* 로고 */
+  .ftr .lockup__logo {
+    width: 120px;
+  }
+
+  /*
+    모바일에서는 메뉴를 1열로
+    플랫폼 → 연계 프로그램 → 바로가기
+  */
+  .ftr__cols {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .ftr__ct {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .ftr__cols li + li {
+    margin-top: 7px;
+  }
+
+  .ftr__cols a {
+    font-size: 13px;
+  }
+
+  /* 회사 정보 */
+  .ftr__bot {
+    margin-top: 32px;
+    padding-top: 20px;
+  }
+
+  .ftr__info {
+    font-size: 11.5px;
+    line-height: 1.8;
+  }
+
+  .ftr__info span {
+    display: block;
+    margin-right: 0;
+  }
+
+  .ftr__info br {
+    display: none;
+  }
+
+  .ftr__cp {
+    margin-top: 14px;
+    font-size: 11px;
+  }
+}

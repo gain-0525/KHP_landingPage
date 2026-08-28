@@ -49,3 +49,166 @@
     font-size: 0;
   }
 }
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  /* 이용 대상 카드 */
+  #guide .cards--2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  #guide .card {
+    padding: 22px;
+  }
+
+  #guide .card__t {
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  /* 협약기업 혜택 / 문의 정보 */
+  #guide .deflist > div {
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 20px;
+    padding: 22px 4px;
+  }
+
+  #guide .deflist dt {
+    font-size: 16px;
+  }
+
+  #guide .deflist dd {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* 예약 안내 */
+  #guide .reservation-notice {
+    padding: 22px 24px;
+  }
+
+  #guide .reservation-notice__title {
+    font-size: 16px;
+  }
+
+  /* 하단 문의 */
+  #guide .reservation-contact {
+    margin-top: 32px;
+    padding: 22px 24px;
+  }
+
+  #guide .reservation-contact h4 {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  #guide .reservation-contact p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  #guide .reservation-contact__divider {
+    display: block;
+    height: 8px;
+    font-size: 0;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  /* 이용 대상 카드 1열 */
+  #guide .cards--2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  #guide .card {
+    padding: 18px 20px;
+    border-radius: 14px;
+  }
+
+  #guide .card__t {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  /* 협약기업 혜택 / 문의 정보 */
+  #guide .deflist {
+    margin-top: 24px;
+  }
+
+  #guide .deflist > div {
+    grid-template-columns: 1fr;
+    gap: 7px;
+    padding: 18px 2px;
+  }
+
+  #guide .deflist dt {
+    font-size: 14px;
+  }
+
+  #guide .deflist dd {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* 협약 체결 방법 */
+  #guide .dots-list {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  /* 예약 안내 */
+  #guide .reservation-notice {
+    margin-top: 20px;
+    padding: 18px 20px;
+    border-radius: 14px;
+  }
+
+  #guide .reservation-notice__title {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+
+  #guide .reservation-notice .dots-list {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* 신청 버튼 */
+  #guide .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 하단 문의 */
+  #guide .reservation-contact {
+    margin-top: 28px;
+    padding: 18px 20px;
+    border-radius: 14px;
+  }
+
+  #guide .reservation-contact h4 {
+    margin-bottom: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  #guide .reservation-contact p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  #guide .reservation-contact__divider {
+    display: block;
+    height: 6px;
+    margin: 0;
+    font-size: 0;
+  }
+}

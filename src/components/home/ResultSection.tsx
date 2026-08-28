@@ -113,10 +113,35 @@ const CountUp = ({ to, duration = 1200 }: CountUpProps) => {
 
 const ResultsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerView, setItemsPerView] = useState(3);
 
-  // PC에서 한 번에 3개 표시
-  // 총 4개이므로 이동 가능한 위치는 0, 1
-  const maxIndex = stats.length - 3;
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 480) {
+        setItemsPerView(1);
+      } else if (window.innerWidth <= 768) {
+        setItemsPerView(2);
+      } else {
+        setItemsPerView(3);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const maxIndex = stats.length - itemsPerView;
+
+  useEffect(() => {
+    if (currentIndex > maxIndex) {
+      setCurrentIndex(maxIndex);
+    }
+  }, [currentIndex, maxIndex]);
 
   const handlePrev = () => {
     setCurrentIndex((prev) => Math.max(prev - 1, 0));
@@ -146,7 +171,7 @@ const ResultsSection = () => {
               <div
                 className="statslide__track"
                 style={{
-                  transform: `translateX(calc(-${currentIndex} * ((100% - 40px) / 3 + 20px)))`,
+                  transform: `translateX(calc(-${currentIndex} * ((100% - ${(itemsPerView - 1) * 20}px) / ${itemsPerView} + 20px)))`,
                 }}
               >
                 {stats.map((stat) => (

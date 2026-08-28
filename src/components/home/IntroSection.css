@@ -71,3 +71,123 @@
   color: var(--ink-2);
   line-height: 1.74;
 }
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  /* KHP 소개 */
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .intro__l,
+  .intro__r {
+    width: 100%;
+  }
+
+  .intro .h2 {
+    font-size: 28px;
+  }
+
+  .intro .quote {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .intro .prose {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  /* 혜택 */
+  .benefit {
+    margin-top: 60px;
+  }
+
+  .benefit__h {
+    font-size: 24px;
+  }
+
+  .benefit__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .bnf {
+    padding: 24px;
+  }
+
+  .bnf__t {
+    font-size: 19px;
+  }
+
+  .bnf__d {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  .intro {
+    gap: 24px;
+  }
+
+  .intro .h2 {
+    font-size: 24px;
+  }
+
+  .intro .quote {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  /* 모바일에서는 quote의 강제 줄바꿈 제거 */
+  .intro .quote br {
+    display: none;
+  }
+
+  .intro .prose {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .intro__r p + p {
+    margin-top: 16px;
+  }
+
+  /* 혜택 */
+  .benefit {
+    margin-top: 48px;
+  }
+
+  .benefit__h {
+    font-size: 21px;
+  }
+
+  .benefit__grid {
+    gap: 12px;
+  }
+
+  .bnf {
+    padding: 20px;
+  }
+
+  .bnf__no {
+    font-size: 13px;
+  }
+
+  .bnf__t {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .bnf__d {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}
