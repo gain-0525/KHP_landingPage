@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 import { navigation } from "../../data/navigation";
 import { useTheme } from "../../hooks/useTheme";
+import goormLogo from '../../assets/goorm_logo.svg';
 
 import "./Header.css";
 
@@ -58,9 +59,11 @@ const Header = () => {
 
           <span className="lockup__bar" aria-hidden="true" />
 
-          <span className="wordmark wordmark--sm">
-            goorm<i>square</i>
-          </span>
+          <img
+            src = {goormLogo}
+            alt = "구름 스퀘어 로고"
+            className="lockup__logo"
+          />
         </Link>
 
         {/* PC Navigation */}
@@ -84,7 +87,7 @@ const Header = () => {
             <NavLink to={item.path} className="gnb__link">
                 <span>{item.label}</span>
 
-                {item.children && (
+                {(item.children || item.label === "문의하기") && (
                     <svg
                     className="gnb__arrow"
                     viewBox="0 0 12 12"

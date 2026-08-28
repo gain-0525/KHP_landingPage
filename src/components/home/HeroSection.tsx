@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./HeroSection.css";
 import '../../styles/global.css'
+import goormLogo from '../../assets/goorm_logo.svg';
 
 const HeroSection = () => {
   return (
@@ -20,12 +21,16 @@ const HeroSection = () => {
             <h1>
               AI 기술이
               <br />
-              <em>기업의 경쟁력</em>이 되는 곳
+              <span className="hero__headline-line">
+                <em>기업의 경쟁력</em>이 되는 곳
+              </span>
             </h1>
 
-            <p className="wordmark wordmark--hero">
-              goorm<i>square</i>
-            </p>
+            <img
+              src={goormLogo}
+              alt="구름 스퀘어 로고"
+              className="lockup__logo2"
+            />
 
             <p className="hero__sub">
               실습 중심 AI 교육부터 공간, 커뮤니티, 기업 맞춤 교육까지
@@ -108,9 +113,11 @@ const HeroSection = () => {
             <div className="ped ped--1" />
 
             <div className="sphere">
-              <span className="wordmark">
-                goorm<i>square</i>
-              </span>
+              <img
+                className="lockup__logo"
+                src={goormLogo}
+                alt = "구글 로고"
+              />
             </div>
 
             <div className="fcard fc--edu">
