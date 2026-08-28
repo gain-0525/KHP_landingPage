@@ -20,6 +20,7 @@
 }
 
 .step {
+  padding-top: 0;
   display: block;
   padding-top: 60px;
   position: relative;
@@ -60,6 +61,7 @@
 }
 
 .step__body {
+  margin-bottom: 0;
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
@@ -160,3 +162,143 @@
 }
 
 .step__stage{ font-size:14px; font-weight:700; color:var(--ink-3); margin-bottom:8px; letter-spacing:-.02em; }
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  /* 3열 → 1열 */
+  .road__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* PC용 가로 타임라인 제거 */
+  .road__track::before {
+    display: none;
+  }
+
+  /* 카드 위 점 제거 */
+  .step::before {
+    display: none;
+  }
+
+  .step {
+    padding-top: 20px;
+  }
+
+  .step__body {
+    padding: 26px 24px;
+  }
+
+  .step__title {
+    font-size: 21px;
+  }
+
+  .step__stage {
+    font-size: 13px;
+  }
+
+  .step__meta {
+    margin-top: 22px;
+    padding-top: 18px;
+  }
+
+  .step__v {
+    font-size: 14px;
+  }
+
+  .step__go {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  /* 하단 영역 */
+  .visit__foot {
+    margin-top: 48px;
+  }
+
+  .visit__copy {
+    font-size: 18px;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  .road__grid {
+    gap: 16px;
+  }
+
+  .step__body {
+    padding: 22px 20px;
+    border-radius: 16px;
+  }
+
+  .step__no {
+    margin-bottom: 5px;
+    font-size: 11px;
+  }
+
+  .step__stage {
+    margin-bottom: 6px;
+    font-size: 12px;
+  }
+
+  .step__title {
+    font-size: 19px;
+    line-height: 1.4;
+  }
+
+  .step__meta {
+    margin-top: 18px;
+    padding-top: 16px;
+  }
+
+  .step__row + .step__row {
+    margin-top: 12px;
+  }
+
+  .step__k {
+    font-size: 12px;
+  }
+
+  .step__v {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .step__hours {
+    margin-left: 4px;
+    padding: 1px 6px;
+    font-size: 11px;
+  }
+
+  .step__go {
+    margin-top: 18px;
+    font-size: 13px;
+  }
+
+  /* 하단 설명 */
+  .visit__foot {
+    margin-top: 40px;
+  }
+
+  .visit__copy {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  /* JSX의 강제 줄바꿈 제거 */
+  .visit__copy br {
+    display: none;
+  }
+
+  .visit__foot .btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

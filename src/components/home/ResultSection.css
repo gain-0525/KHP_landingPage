@@ -243,3 +243,130 @@
     transform: translateX(calc(-50% - 8px));
   }
 }
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  .statslide .stat {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+
+  .stat {
+    padding: 30px 26px;
+  }
+
+  .stat__k {
+    font-size: 14px;
+  }
+
+  .stat__v {
+    font-size: 44px;
+  }
+
+  .stat__note {
+    font-size: 13px;
+  }
+
+  .partners {
+    margin-top: 52px;
+    padding-top: 40px;
+  }
+
+  .partners__flow {
+    margin-top: 26px;
+  }
+
+  .marquee__track li {
+    width: 160px;
+    height: 76px;
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  /* 성과 카드 1개씩 */
+  .statslide .stat {
+    flex: 0 0 100%;
+  }
+
+  .stat {
+    padding: 26px 22px;
+    border-radius: 16px;
+  }
+
+  .stat__k {
+    font-size: 13px;
+  }
+
+  .stat__v {
+    margin-top: 12px;
+    font-size: 40px;
+  }
+
+  .stat__note {
+    margin-top: 14px;
+    font-size: 12px;
+  }
+
+  /* 슬라이더 컨트롤 */
+  .slider__nav {
+    margin-top: 16px;
+  }
+
+  .dots {
+    gap: 5px;
+  }
+
+  .dots button {
+    width: 20px;
+  }
+
+  .dots button[aria-current="true"] {
+    width: 30px;
+  }
+
+  .arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  /* 협력 기업 */
+  .partners {
+    margin-top: 44px;
+    padding-top: 36px;
+  }
+
+  .partners__t {
+    font-size: 15px;
+  }
+
+  .partners__d {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .partners__flow {
+    margin-top: 24px;
+  }
+
+  /* 흘러가는 기업 로고 */
+  .marquee__track {
+    gap: 10px;
+  }
+
+  .marquee__track--rev {
+    margin-top: 10px;
+  }
+
+  .marquee__track li {
+    width: 135px;
+    height: 66px;
+    border-radius: 12px;
+    font-size: 12px;
+  }
+}

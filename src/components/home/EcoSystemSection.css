@@ -68,3 +68,73 @@
 .eco__it--soon .eco__go {
   color: var(--ink-3);
 }
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  .eco {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .eco__it {
+    padding: 24px 22px;
+    min-height: 190px;
+  }
+
+  .eco__tag {
+    font-size: 12px;
+  }
+
+  .eco__t {
+    margin-top: 12px;
+    font-size: 18px;
+  }
+
+  .eco__d {
+    font-size: 14px;
+  }
+
+  .eco__go {
+    padding-top: 18px;
+    font-size: 13.5px;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  .eco {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .eco__it {
+    min-height: 170px;
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  .eco__tag {
+    font-size: 11px;
+  }
+
+  .eco__t {
+    margin-top: 10px;
+    font-size: 17px;
+  }
+
+  .eco__d {
+    margin-top: 7px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .eco__go {
+    padding-top: 16px;
+    font-size: 13px;
+  }
+}

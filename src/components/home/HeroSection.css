@@ -130,7 +130,10 @@
 }
 
 .lockup__logo2 {
+  display: block;
   width: 500px;
+  max-width: 100%;
+  height: auto;
 }
 html[data-theme="dark"] .lockup__logo2 {
   filter: invert(1);
@@ -147,3 +150,215 @@ html[data-theme="dark"] .lockup__logo2 {
 .hstat__ic{ width:50px; height:50px; border-radius:15px; flex:0 0 auto; background:var(--tint); color:var(--blue); display:grid; place-items:center; }
 .hstat__v{ font-size:clamp(19px,2.3vw,27px); font-weight:800; letter-spacing:-.045em; line-height:1.15; font-variant-numeric:tabular-nums; }
 .hstat__k{ margin-top:4px; font-size:13.5px; color:var(--ink-3); font-weight:500; }
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  .hero {
+    padding: 48px 0 56px;
+  }
+
+  /* 좌우 배치 → 위아래 배치 */
+  .hero__in {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero__headline-line {
+    white-space: normal;
+  }
+
+  .lockup__logo2 {
+    width: 380px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero__sub {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .hero__visual {
+    width: 90%;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  /* 통계 4개 → 2 x 2 */
+  .hero__stats {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 44px;
+  }
+
+  .hstat {
+    padding: 16px 20px;
+  }
+
+  .hstat + .hstat {
+    border-left: none;
+  }
+
+  .hstat:nth-child(even) {
+    border-left: 1px solid var(--hair);
+  }
+
+  .hstat:nth-child(n + 3) {
+    border-top: 1px solid var(--hair);
+  }
+
+  /* 떠다니는 카드 약간 축소 */
+  .fcard {
+    padding: 9px 13px 9px 10px;
+  }
+
+  .fcard b {
+    font-size: 13px;
+  }
+
+  .fcard > span:not(.fcard__ic) > span {
+    font-size: 11px;
+  }
+
+  .fcard__ic {
+    width: 31px;
+    height: 31px;
+  }
+
+  .fcard__ic .ic {
+    width: 21px;
+    height: 21px;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  .hero {
+    padding: 36px 0 44px;
+  }
+
+  .hero__in {
+    gap: 30px;
+  }
+
+  .hero__badges {
+    margin-bottom: 22px;
+    gap: 6px;
+  }
+
+  .pill {
+    height: 32px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+
+  .hero__headline-line {
+    white-space: normal;
+  }
+
+  .lockup__logo2 {
+    width: 290px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero__sub {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* 모바일에서는 강제 줄바꿈 제거 */
+  .hero__sub br {
+    display: none;
+  }
+
+  /* 버튼 */
+  .hero__cta {
+    margin-top: 26px;
+    flex-direction: column;
+  }
+
+  .hero__cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 오른쪽 그래픽 */
+  .hero__visual {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* 떠다니는 카드 */
+  .fcard {
+    gap: 6px;
+    padding: 7px 9px;
+    border-radius: 11px;
+  }
+
+  .fcard__ic {
+    width: 27px;
+    height: 27px;
+    border-radius: 8px;
+  }
+
+  .fcard__ic .ic {
+    width: 18px;
+    height: 18px;
+  }
+
+  .fcard b {
+    font-size: 11px;
+  }
+
+  .fcard > span:not(.fcard__ic) > span {
+    font-size: 9px;
+  }
+
+  /* 통계 1열 */
+  .hero__stats {
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+    padding: 8px;
+  }
+
+  .hstat {
+    padding: 14px 16px;
+  }
+
+  .hstat + .hstat,
+  .hstat:nth-child(even) {
+    border-left: none;
+  }
+
+  .hstat:nth-child(n + 2) {
+    border-top: 1px solid var(--hair);
+  }
+
+  .hstat__ic {
+    width: 42px;
+    height: 42px;
+  }
+
+  .hstat__v {
+    font-size: 20px;
+  }
+
+  .hstat__k {
+    font-size: 12px;
+  }
+}
