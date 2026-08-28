@@ -17,9 +17,6 @@ const SpacePage = () => {
     const scrollToTarget = () => {
       const target = document.getElementById(id);
 
-      console.log("이동할 ID:", id);
-      console.log("찾은 element:", target);
-
       if (target) {
         target.scrollIntoView({
           behavior: "smooth",

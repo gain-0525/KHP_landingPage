@@ -42,3 +42,88 @@
   font-size: 14px;
   color: var(--ink-3);
 }
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  #reviews .review__cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  #reviews .rev {
+    padding: 24px;
+    border-radius: 18px;
+  }
+
+  #reviews .rev__stars {
+    margin-bottom: 16px;
+    font-size: 17px;
+  }
+
+  #reviews .rev__q {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  #reviews .rev__by {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  #reviews .rev__by_part {
+    font-size: 13px;
+  }
+
+  #reviews .review__note {
+    margin-top: 24px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  #reviews .review__cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 26px;
+  }
+
+  #reviews .rev {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  #reviews .rev__stars {
+    margin-bottom: 14px;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+  }
+
+  #reviews .rev__q {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  #reviews .rev__by {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  #reviews .rev__by_part {
+    font-size: 12px;
+  }
+
+  #reviews .review__note {
+    margin-top: 20px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
