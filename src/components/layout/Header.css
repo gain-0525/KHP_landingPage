@@ -277,6 +277,10 @@
   object-fit: contain;
 }
 
+html[data-theme="dark"] .lockup__logo {
+  filter: invert(1);
+}
+
 .mnav {
   display: none;
 

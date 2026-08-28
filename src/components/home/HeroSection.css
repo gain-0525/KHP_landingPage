@@ -132,6 +132,9 @@
 .lockup__logo2 {
   width: 500px;
 }
+html[data-theme="dark"] .lockup__logo2 {
+  filter: invert(1);
+}
 
 .hero__stats{
   margin-top:56px; display:grid; grid-template-columns:repeat(4,1fr); padding:24px 8px;
