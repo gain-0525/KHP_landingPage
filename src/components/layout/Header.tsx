@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { navigation } from "../../data/navigation";
 import { useTheme } from "../../hooks/useTheme";
 import goormLogo from '../../assets/goorm_logo.svg';
+import khpLogo from '../../assets/k-hightech.png'
 
 import "./Header.css";
 
@@ -26,36 +27,13 @@ const Header = () => {
           onClick={closeMobileMenu}
         >
           <span className="lockup__mark" aria-hidden="true">
-            <svg
-              viewBox="0 0 46 48"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path
-                d="M8 32.2 L21 24 L27 40.5"
-                stroke="#16457E"
-                strokeWidth="7.6"
-              />
-              <path
-                d="M11 12.5 L19.5 19.6"
-                stroke="#0E86BE"
-                strokeWidth="7"
-              />
-              <path
-                d="M25.2 10 L28.6 19.4"
-                stroke="#5CB03F"
-                strokeWidth="7"
-              />
-              <path
-                d="M30 22.8 L40 26.6"
-                stroke="#F0A32B"
-                strokeWidth="7"
-              />
-            </svg>
+            <img
+              src = {khpLogo}
+              alt="k-하이테크 플랫폼"
+              className="khp__icon"
+            />
           </span>
 
-          <span className="lockup__khp">K-HIGH TECH PLATFORM</span>
 
           <span className="lockup__bar" aria-hidden="true" />
 
@@ -135,10 +113,6 @@ const Header = () => {
           >
             {theme === "dark" ? "☀" : "☾"}
           </button>
-
-          <Link className="hdr__login" to="/login">
-            로그인
-          </Link>
 
           <button
             type="button"

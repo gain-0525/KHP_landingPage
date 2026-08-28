@@ -1,0 +1,113 @@
+.notice-detail__head {
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--line);
+}
+
+.notice-detail__head .tag {
+  display: inline-flex;
+  margin-top: 24px;
+}
+
+.notice-detail__head h1 {
+  margin-top: 18px;
+  max-width: 900px;
+  font-size: clamp(28px, 4vw, 42px);
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+  color: var(--ink);
+}
+
+.notice-detail__date {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--ink-3);
+}
+
+.notice-detail__body {
+  min-height: 300px;
+  padding: 48px 0;
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--ink-2);
+}
+
+.notice-detail__bottom {
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  .notice-detail__head {
+    padding-bottom: 28px;
+  }
+
+  .notice-detail__head .tag {
+    margin-top: 20px;
+  }
+
+  .notice-detail__head h1 {
+    margin-top: 16px;
+    font-size: 32px;
+  }
+
+  .notice-detail__date {
+    font-size: 13px;
+  }
+
+  .notice-detail__body {
+    min-height: 260px;
+    padding: 40px 0;
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .notice-detail__bottom {
+    padding-top: 22px;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  .notice-detail__head {
+    padding-bottom: 24px;
+  }
+
+  .notice-detail__head .tag {
+    margin-top: 18px;
+  }
+
+  .notice-detail__head h1 {
+    margin-top: 14px;
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  .notice-detail__date {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .notice-detail__body {
+    min-height: 220px;
+    padding: 32px 0;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .notice-detail__bottom {
+    padding-top: 20px;
+  }
+
+  .notice-detail__bottom .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

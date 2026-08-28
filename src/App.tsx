@@ -12,6 +12,7 @@ import ContactPage from "./pages/ContactPage";
 import "./components/common/ScrollToTop";
 import ScrollToTop from "./components/common/ScrollToTop";
 import CommunityPage from "./pages/CommunityPage";
+import NoticeDetailPage from './pages/NoticeDetailPage';
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
           <Route path="/space" element={<SpacePage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/community" element={<CommunityPage />} />
+          <Route
+            path="/community/notice/:id"
+            element={<NoticeDetailPage />}
+          />
         </Routes>
       </main>
 
