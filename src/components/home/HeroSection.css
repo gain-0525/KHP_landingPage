@@ -125,6 +125,10 @@
 .fc--rent{ right:5%; top:69%; animation-delay:-4.4s; }
 @keyframes float{ 0%,100%{ transform:translateY(0);} 50%{ transform:translateY(-8px);} }
 
+.hero__headline-line {
+  white-space: nowrap;
+}
+
 .hero__stats{
   margin-top:56px; display:grid; grid-template-columns:repeat(4,1fr); padding:24px 8px;
   background:var(--stats-bg); border:1px solid var(--stats-line);

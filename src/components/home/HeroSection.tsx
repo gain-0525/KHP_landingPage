@@ -20,7 +20,9 @@ const HeroSection = () => {
             <h1>
               AI 기술이
               <br />
-              <em>기업의 경쟁력</em>이 되는 곳
+              <span className="hero__headline-line">
+                <em>기업의 경쟁력</em>이 되는 곳
+              </span>
             </h1>
 
             <p className="wordmark wordmark--hero">
