@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./Footer.css";
 import goormLogo from '../../assets/goorm_logo.svg';
+import khpLogo from '../../assets/k-hightech.png';
 
 const Footer = () => {
   return (
@@ -44,10 +45,11 @@ const Footer = () => {
               </svg>
             </span>
 
-            <span className="lockup__khp">
-              K-HIGH TECH PLATFORM
-            </span>
-
+            <img
+              src = {khpLogo}
+              alt = "k-하이테크 플랫폼"
+              className="lockup__khp"
+            />
             <span
               className="lockup__bar"
               aria-hidden="true"
