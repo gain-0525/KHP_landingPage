@@ -380,8 +380,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
-
-  width: 360px;
+  width: 280px;
+  background-color: transparent;
+  border-radius: 12px;
+  border: 1px solid var(--line);
 }
 
 .space__tab {
@@ -493,12 +495,6 @@
   margin-top: 6px;
 }
 
-.space__tabs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 360px;
-  gap: 10px;
-}
 
 .space__tab {
   min-height: 58px;

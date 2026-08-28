@@ -4,11 +4,9 @@
 
 .rev {
   padding: 28px;
-
   border: 1px solid var(--line);
   border-radius: 20px;
-
-  background: #fff;
+  background: var(--surface);
 }
 
 .rev__stars {
@@ -19,24 +17,22 @@
   letter-spacing: 2px;
 }
 
+
 .rev__q {
   margin: 0;
-
   color: var(--ink);
   line-height: 1.8;
 }
 
+
 .rev__by {
   margin: 24px 0 0;
-
   color: var(--ink-3);
   font-size: 14px;
 }
 
 .rev__by_part {
-  margin: 24px 0 0;
-
-  color: black;
+  color: var(--ink);
   font-size: 14px;
 }
 

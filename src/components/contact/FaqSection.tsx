@@ -228,7 +228,7 @@ const FaqSection = () => {
 
                 {isOpen && (
                   <div className="faq__answer">
-                    <p>{faq.answer}</p>
+                    {faq.answer}
                   </div>
                 )}
               </div>

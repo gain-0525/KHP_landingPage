@@ -3,6 +3,8 @@
   --ink-2: #454b5c;
   --ink-3: #7b8296;
 
+  --answer-text: #454b5c;
+
   --line: #e5e7f2;
   --line-2: #f0f1f9;
 
@@ -45,6 +47,8 @@ html[data-theme="dark"]{
   --ink-2:#A9B0C4;
   --ink-3:#767E96;
   --ink-4:#5C6480;
+
+  --answer-text: #D5D9E5;
 
   --line:#262A38;
   --line-2:#1E2230;
