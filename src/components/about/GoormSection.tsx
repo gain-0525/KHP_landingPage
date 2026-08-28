@@ -38,7 +38,7 @@ const GoormSection = () => {
             제공합니다.
           </p>
 
-          <div className="cards" style={{ marginTop: "44px" }}>
+          <div className="cards goorm__maincards">
             <div className="card">
               <h3 className="card__t">
                 검증된 기술력과
@@ -79,10 +79,7 @@ const GoormSection = () => {
             </div>
           </div>
 
-          <div
-            className="cards cards--2"
-            style={{ marginTop: "20px" }}
-          >
+          <div className="cards cards--2 goorm__subcards">
             <div className="card">
               <h3 className="card__t">수상 및 인증</h3>
 

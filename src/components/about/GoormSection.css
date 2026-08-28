@@ -1,0 +1,140 @@
+#goorm .goorm__maincards {
+  margin-top: 44px;
+}
+
+#goorm .goorm__subcards {
+  margin-top: 20px;
+}
+/* =========================
+   태블릿
+========================= */
+@media (max-width: 768px) {
+  #goorm .prose {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  /* 위쪽 3개 카드 → 2열 */
+  #goorm .cards:not(.cards--2) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  #goorm .card {
+    padding: 24px;
+  }
+
+  #goorm .card__t {
+    font-size: 19px;
+  }
+
+  #goorm .card__d {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* 아래 2개 카드는 그대로 2열 */
+  #goorm .cards--2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  #goorm .partners {
+    margin-top: 52px;
+  }
+
+  #goorm .marquee__track li {
+    width: 160px;
+    height: 76px;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   모바일
+========================= */
+@media (max-width: 480px) {
+  #goorm .prose {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  #goorm .prose + .prose {
+    margin-top: 16px;
+  }
+
+  /* 모든 카드 1열 */
+  #goorm .cards:not(.cards--2),
+  #goorm .cards--2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  #goorm .card {
+    padding: 20px;
+    border-radius: 14px;
+  }
+
+  #goorm .card__t {
+    font-size: 18px;
+    line-height: 1.45;
+  }
+
+  #goorm .card__d {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  #goorm .card__meta {
+    gap: 6px;
+  }
+
+  #goorm .tag {
+    font-size: 11px;
+  }
+
+  /* 기업교육 버튼 */
+  #goorm .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* 파트너사 */
+  #goorm .partners {
+    margin-top: 44px;
+  }
+
+  #goorm .partners__t {
+    font-size: 15px;
+  }
+
+  #goorm .partners__d {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  #goorm .partners__flow {
+    margin-top: 24px;
+  }
+
+  #goorm .marquee__track {
+    gap: 10px;
+  }
+
+  #goorm .marquee__track li {
+    width: 135px;
+    height: 66px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  #goorm .goorm__maincards {
+    margin-top: 32px;
+  }
+
+  #goorm .goorm__subcards {
+    margin-top: 12px;
+  }
+}
