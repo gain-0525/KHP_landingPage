@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import "./Footer.css";
+import goormLogo from '../../assets/goorm_logo.svg';
 
 const Footer = () => {
   return (
@@ -52,9 +53,11 @@ const Footer = () => {
               aria-hidden="true"
             />
 
-            <span className="wordmark wordmark--sm">
-              goorm<i>square</i>
-            </span>
+            <img
+            src = {goormLogo}
+            alt = "구름 스퀘어 로고"
+            className="lockup__logo"
+          />
           </Link>
 
           {/* Footer Navigation */}

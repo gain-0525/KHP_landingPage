@@ -270,6 +270,12 @@
 /* =========================
    Mobile navigation
 ========================= */
+.lockup__logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
 
 .mnav {
   display: none;

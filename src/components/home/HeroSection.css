@@ -129,6 +129,10 @@
   white-space: nowrap;
 }
 
+.lockup__logo2 {
+  width: 500px;
+}
+
 .hero__stats{
   margin-top:56px; display:grid; grid-template-columns:repeat(4,1fr); padding:24px 8px;
   background:var(--stats-bg); border:1px solid var(--stats-line);
