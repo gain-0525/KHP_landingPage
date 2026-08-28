@@ -181,3 +181,24 @@
     font-size: 11px;
   }
 }
+
+.lockup__khp {
+  display: block;
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 태블릿 */
+@media (max-width: 768px) {
+  .lockup__khp {
+    width: 150px;
+  }
+}
+
+/* 모바일 */
+@media (max-width: 480px) {
+  .lockup__khp {
+    width: 120px;
+  }
+}

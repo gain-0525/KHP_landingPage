@@ -26,6 +26,7 @@
 
   #goorm .card__t {
     font-size: 19px;
+    font-weight: 700;
   }
 
   #goorm .card__d {
@@ -79,6 +80,7 @@
   #goorm .card__t {
     font-size: 18px;
     line-height: 1.45;
+    font-weight: 700;
   }
 
   #goorm .card__d {
